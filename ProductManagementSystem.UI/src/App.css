@@ -1,0 +1,89 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem max(1.25rem, calc((100% - 1100px) / 2));
+  border-bottom: 1px solid rgba(223, 229, 239, 0.85);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 4px 20px rgba(33, 52, 82, 0.04);
+  backdrop-filter: blur(16px);
+}
+
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.app-header__logo {
+  display: grid;
+  place-items: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 0.75rem;
+  color: #fff;
+  background: linear-gradient(135deg, #3563e9, #6a4de8);
+  box-shadow: 0 8px 18px rgba(53, 99, 233, 0.25);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.app-header__brand div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.app-header__brand strong {
+  color: #172033;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.app-header__brand div span {
+  color: #8490a2;
+  font-size: 0.68rem;
+}
+
+.app-header__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid #e2e9f2;
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  color: #64738a;
+  background: #f8faff;
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.app-header__status-dot {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: #24a66a;
+  box-shadow: 0 0 0 3px rgba(36, 166, 106, 0.12);
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 0.8rem 0.75rem;
+  }
+
+  .app-header__status {
+    padding: 0.4rem;
+    font-size: 0;
+  }
+
+  .app-header__status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
